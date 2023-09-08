@@ -9,6 +9,7 @@ from slack_sdk.errors import SlackApiError
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 from datetime import date
+from config import slack_token
 
 def get_nfl_wins():
     df=nfl.import_schedules([2022])
@@ -117,7 +118,6 @@ def get_nfl_wins():
 today = date.today()
 nfl_wins_detail, nfl_wins_summary = get_nfl_wins()
 
-slack_token=slack_token
 channel='nfl'
 app = App(token=slack_token)
 client = WebClient(token=slack_token)
