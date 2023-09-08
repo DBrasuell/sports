@@ -117,7 +117,7 @@ def get_nfl_wins():
 today = date.today()
 nfl_wins_detail, nfl_wins_summary = get_nfl_wins()
 
-slack_token="xoxb-138249782035-5117499680852-ect8pSvp2xCaRFQTEkwSuI7e"
+slack_token=slack_token
 channel='nfl'
 app = App(token=slack_token)
 client = WebClient(token=slack_token)
