@@ -23,6 +23,7 @@ for division in data:
     division_df=pd.DataFrame(division, columns=['Tm','W','L','W-L%','GB'])
     wins = pd.concat([wins, division_df], axis=0)
 
+
 data= [
   {
     "Name": "Kevin",
@@ -145,6 +146,7 @@ data= [
     "Team": "Chicago White Sox"
   }
 ]
+
 
 owners = pd.DataFrame(data)
 
